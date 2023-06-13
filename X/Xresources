@@ -1,0 +1,49 @@
+!! Colorscheme
+
+! special
+*.foreground: #cfd7e2
+*.background: #13181f
+*.cursorColor: #cfd7e2
+
+! black
+*.color0: #0a0c0e
+*.color8: #475260
+
+! red
+*.color1: #971010
+*.color9: #ed6262
+
+! green
+*.color2: #2a8621
+*.color10: #7cdc74
+
+! yellow
+*.color3: #dcdc18
+*.color11: #efef75
+
+! blue 
+*.color4: #214b86
+*.color12: #749fdc
+
+! magenta
+*.color5: #86216d
+*.color13: #dc74c2
+
+! cyan
+*.color6: #21867e
+*.color14: #74dcd3
+
+! white
+*.color7: #9ba6b5
+*.color15: #f0f1f4
+
+
+
+!! URxvt
+URxvt.scrollBar: false
+URxvt.geometry: 400x400
+URxvt.cursorBlink: true
+URxvt.depth: 24
+URxvt.underlineURLs: true
+URxvt*perl-ext:
+URxvt*perl-ext-common:
