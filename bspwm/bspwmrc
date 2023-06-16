@@ -1,11 +1,12 @@
-#!/bin/bash
+#!/bin/sh
 
-xsetroot -cursor_name left_ptr
-xrdb ~/.Xresources
-xrandr -s 1920x1080
-feh --no-fehbg --bg-fill '/home/bmeyer/documents/images/bg/fedora-bg.png'
-sxhkd &
+xsetroot -cursor_name left_ptr &
+xrdb ~/.Xresources &
+#xrandr -s 1920x1080
 polybar &
+feh --no-fehbg --bg-fill '/home/bmeyer/documents/images/fedora-bg.png' &
+sxhkd &
+/usr/libexec/xfce-polkit &
 
 bspc monitor -d 1 2 3 4
 
