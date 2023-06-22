@@ -1,0 +1,30 @@
+# .bashrc
+
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+	. /etc/bashrc
+fi
+
+# User specific environment
+if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]
+then
+    PATH="$HOME/.local/bin:$HOME/bin:$PATH"
+fi
+export PATH
+
+#export PS1="\e[1;34m[\u\e[m@\e[1;34m\h\e[m \W\e[1;34m]\e[m\$"
+export PS1="\e[1;34m[\u\e[m \W\e[1;34m]\e[m\$ "
+
+export VISUAL=nano
+export EDITOR="$VISUAL"
+export GTK_THEME=Adwaita:dark
+
+alias myip='curl ipinfo.io/ip'
+alias untar='tar -zxvf'
+alias sha='shasum -a 256'
+alias ls='ls -xhA --color=auto --group-directories-first'
+alias cp='cp -iv'
+alias mv='mv -iv'
+alias rm='rm -rv'
+alias mkdir='mkdir -pv'
+alias wifi='nmcli device wifi'

@@ -1,0 +1,30 @@
+
+# quit or restart bspwm
+super + ctrl + {q,r}
+	bspc {quit,wm -r}
+
+# terminal
+super + Return
+	urxvt
+
+# close window
+super + q
+	bspc node -{k,c}
+
+# menus
+super + a
+	rofi -show drun
+
+# focus window
+super + {Left,Down,Up,Right}
+	bspc node -f {west,south,north,east}
+
+# move window
+super + alt + {Left,Down,Up,Right}
+	bspc node -s {west,south,north,east}
+
+# desktop
+super + ctrl + {Left,Right}
+	bspc desktop -f {prev,next}
+
+
