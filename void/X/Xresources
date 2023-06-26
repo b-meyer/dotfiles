@@ -45,6 +45,6 @@ URxvt.geometry: 400x400
 URxvt.cursorBlink: true
 URxvt.depth: 24
 URxvt.underlineURLs: true
-URxvt.font: xft:Cascadia Code:style=Normal:antialias=true:size=9:minspace=False
+URxvt.font: xft:Cascadia Code:style=Normal:antialias=true:size=7:minspace=False
 URxvt*perl-ext:
 URxvt*perl-ext-common:
