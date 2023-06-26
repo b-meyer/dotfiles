@@ -2,7 +2,7 @@
 
 xsetroot -cursor_name left_ptr &
 xrdb ~/.Xresources &
-#xrandr -s 1920x1080
+xrandr -s 1920x1080
 polybar &
 feh --no-fehbg --bg-fill '/home/bmeyer/bg.png' &
 sxhkd &
