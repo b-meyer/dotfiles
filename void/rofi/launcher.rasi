@@ -34,7 +34,7 @@ window {
     padding:                     0px;
     border:                      2;
     border-radius:               4;
-    border-color:                #5f7a9f;
+    border-color:                #7a936c;
     background-color:            @background;
     cursor:                      "default";
 }

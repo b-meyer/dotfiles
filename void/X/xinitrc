@@ -1,3 +1,3 @@
 #!/bin/sh
 
-exec bspwm
+exec dbus_run_session bspwm
