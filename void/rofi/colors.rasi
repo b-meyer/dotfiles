@@ -10,5 +10,5 @@
     background:     #191c17FF;
     background-alt: #252a22FF;
     foreground:     #d7ded3FF;
-    selected:       #303d29FF;
+    selected:       #466336FF;
 }
