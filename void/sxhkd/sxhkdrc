@@ -5,7 +5,7 @@ super + ctrl + {q,r}
 
 # terminal
 super + Return
-	urxvt
+	st
 
 # close window
 super + q
