@@ -22,12 +22,12 @@ configuration {
 /*****----- Main Window -----*****/
 window {
     transparency:                "screenshot";
-    location:                    southwest;
-    anchor:                      southwest;
+    location:                    center;
+    anchor:                      center;
     fullscreen:                  false;
     width:                       400px;
-    x-offset:                    8;
-    y-offset:                    -52;
+    x-offset:                    0;
+    y-offset:                    0;
 
     enabled:                     true;
     margin:                      0px;
