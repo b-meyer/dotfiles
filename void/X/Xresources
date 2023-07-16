@@ -1,41 +1,41 @@
 !! Colorscheme
 
 ! special
-*.foreground: #d7ded3
-*.background: #191c17
-*.cursorColor: #e4e9e2
+*.foreground: #e2e9e5
+*.background: #171c19
+*.cursorColor: #a7beb2
 
 ! black
-*.color0: #0c0e0b
-*.color8: #525d4c
+*.color0: #0b0e0d
+*.color8: #4c5d54
 
 ! red
-*.color1: #8a0f3a
-*.color9: #eb4781
+*.color1: #8a0f51
+*.color9: #eb479e
 
 ! green
-*.color2: #3f7a1f
-*.color10: #87d65c
+*.color2: #507a1f
+*.color10: #9dd65c
 
 ! yellow
-*.color3: #cf8e17
-*.color11: #ebb147
+*.color3: #cf9117
+*.color11: #edbe5e
 
 ! blue 
-*.color4: #1f3f7a
-*.color12: #5c87d6
+*.color4: #1f507a
+*.color12: #5c9dd6
 
 ! magenta
-*.color5: #5a1f7a
-*.color13: #ab5cd6
+*.color5: #591f7a
+*.color13: #a95cd6
 
 ! cyan
-*.color6: #1f7a5a
-*.color14: #5cd6ab
+*.color6: #1f7a49
+*.color14: #5cd695
 
 ! white
-*.color7: #a6b1a0
-*.color15: #f2f4f1
+*.color7: #a0b1a8
+*.color15: #f1f4f2
 
 
 

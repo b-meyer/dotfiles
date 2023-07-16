@@ -35,7 +35,7 @@ window {
     border:                      2;
     border-radius:               4;
     border-color:                #466336;
-    background-color:            @background;
+    background-color:            @Background_D;
     cursor:                      "default";
 }
 
@@ -47,7 +47,7 @@ mainbox {
     padding:                     0px;
     border:                      0px solid;
     border-radius:               0px 0px 0px 0px;
-    border-color:                @selected;
+    border-color:                @Border_L;
     background-color:            transparent;
     children:                    [ "inputbar", "listview" ];
 }
@@ -60,9 +60,9 @@ inputbar {
     padding:                     15px;
     border:                      0px solid;
     border-radius:               0px;
-    border-color:                @selected;
-    background-color:            @selected;
-    text-color:                  @background;
+    border-color:                @Background_L;
+    background-color:            @Background_L;
+    text-color:                  @Foreground_L;
     children:                    [ "prompt", "entry" ];
 }
 
@@ -106,16 +106,16 @@ listview {
     padding:                     0px;
     border:                      0px solid;
     border-radius:               0px;
-    border-color:                @selected;
+    border-color:                @Background_L;
     background-color:            transparent;
-    text-color:                  @foreground;
+    text-color:                  @Foreground_L;
     cursor:                      "default";
 }
 scrollbar {
     handle-width:                5px ;
-    handle-color:                @selected;
+    handle-color:                @Background_L;
     border-radius:               0px;
-    background-color:            @background-alt;
+    background-color:            @Border_L;
 }
 
 /*****----- Elements -----*****/
@@ -126,18 +126,18 @@ element {
     padding:                     8px;
     border:                      0px solid;
     border-radius:               0px;
-    border-color:                @selected;
+    border-color:                @Background_L;
     background-color:            transparent;
-    text-color:                  @foreground;
+    text-color:                  @Foreground_L;
     cursor:                      pointer;
 }
 element normal.normal {
-    background-color:            @background;
-    text-color:                  @foreground;
+    background-color:            @Background_D;
+    text-color:                  @Foreground_L;
 }
 element selected.normal {
-    background-color:            @background-alt;
-    text-color:                  @foreground;
+    background-color:            @Background_L;
+    text-color:                  @Foreground_L;
 }
 element-icon {
     background-color:            transparent;
@@ -160,12 +160,12 @@ error-message {
     border:                      2px solid;
     border-radius:               12px;
     border-color:                @selected;
-    background-color:            @background;
-    text-color:                  @foreground;
+    background-color:            @Background_D;
+    text-color:                  @Foreground_L;
 }
 textbox {
-    background-color:            @background;
-    text-color:                  @foreground;
+    background-color:            @Background_D;
+    text-color:                  @Foreground_L;
     vertical-align:              0.5;
     horizontal-align:            0.0;
     highlight:                   none;
