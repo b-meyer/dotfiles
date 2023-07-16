@@ -65,7 +65,6 @@ prompt {
     background-color:            inherit;
     text-color:                  inherit;
     padding:                     2 0 0 0;
-    background-color:            @Foreground-L;
 }
 textbox-prompt-colon {
     enabled:                     true;
