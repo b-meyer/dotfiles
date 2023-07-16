@@ -7,10 +7,10 @@
  **/
 
 * {
-    Background_D:     #171c19ff;
-    Background_L:     #222a26ff;
-    Border_D:         #293d32ff;
-    Border_L:         #36634bff;
-    Foreground_D:     #a7beb2ff;
-    Foreground_L:     #e2e9e5ff;
+    Background-D:     #171c19ff;
+    Background-L:     #222a26ff;
+    Border-D:         #293d32ff;
+    Border-L:         #36634bff;
+    Foreground-D:     #a7beb2ff;
+    Foreground-L:     #e2e9e5ff;
 }
