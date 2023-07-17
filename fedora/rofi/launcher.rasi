@@ -22,20 +22,20 @@ configuration {
 /*****----- Main Window -----*****/
 window {
     transparency:                "screenshot";
-    location:                    southwest;
-    anchor:                      southwest;
+    location:                    center;
+    anchor:                      center;
     fullscreen:                  false;
     width:                       400px;
-    x-offset:                    8;
-    y-offset:                    -52;
+    x-offset:                    0;
+    y-offset:                    0;
 
     enabled:                     true;
     margin:                      0px;
     padding:                     0px;
     border:                      2;
     border-radius:               4;
-    border-color:                #5f7a9f;
-    background-color:            @background;
+    border-color:                @Border-L;
+    background-color:            @Background-D;
     cursor:                      "default";
 }
 
@@ -45,9 +45,6 @@ mainbox {
     spacing:                     0px;
     margin:                      0px;
     padding:                     0px;
-    border:                      0px solid;
-    border-radius:               0px 0px 0px 0px;
-    border-color:                @selected;
     background-color:            transparent;
     children:                    [ "inputbar", "listview" ];
 }
@@ -58,11 +55,8 @@ inputbar {
     spacing:                     10px;
     margin:                      0px;
     padding:                     15px;
-    border:                      0px solid;
-    border-radius:               0px;
-    border-color:                @selected;
-    background-color:            @selected;
-    text-color:                  @background;
+    background-color:            @Border-L;
+    text-color:                  @Background-D;
     children:                    [ "prompt", "entry" ];
 }
 
@@ -106,16 +100,16 @@ listview {
     padding:                     0px;
     border:                      0px solid;
     border-radius:               0px;
-    border-color:                @selected;
+    border-color:                @Background-L;
     background-color:            transparent;
-    text-color:                  @foreground;
+    text-color:                  @Foreground-L;
     cursor:                      "default";
 }
 scrollbar {
     handle-width:                5px ;
-    handle-color:                @selected;
+    handle-color:                @Background-L;
     border-radius:               0px;
-    background-color:            @background-alt;
+    background-color:            @Border-L;
 }
 
 /*****----- Elements -----*****/
@@ -126,18 +120,18 @@ element {
     padding:                     8px;
     border:                      0px solid;
     border-radius:               0px;
-    border-color:                @selected;
+    border-color:                @Background-L;
     background-color:            transparent;
-    text-color:                  @foreground;
+    text-color:                  @Foreground-L;
     cursor:                      pointer;
 }
 element normal.normal {
-    background-color:            @background;
-    text-color:                  @foreground;
+    background-color:            @Background-D;
+    text-color:                  @Foreground-L;
 }
 element selected.normal {
-    background-color:            @background-alt;
-    text-color:                  @foreground;
+    background-color:            @Background-L;
+    text-color:                  @Foreground-L;
 }
 element-icon {
     background-color:            transparent;
@@ -160,12 +154,12 @@ error-message {
     border:                      2px solid;
     border-radius:               12px;
     border-color:                @selected;
-    background-color:            @background;
-    text-color:                  @foreground;
+    background-color:            @Background-D;
+    text-color:                  @Foreground-L;
 }
 textbox {
-    background-color:            @background;
-    text-color:                  @foreground;
+    background-color:            @Background-D;
+    text-color:                  @Foreground-L;
     vertical-align:              0.5;
     horizontal-align:            0.0;
     highlight:                   none;
