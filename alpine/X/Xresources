@@ -1,0 +1,38 @@
+!! Colorscheme
+
+! special
+*.foreground: #e0e6eb
+*.background: #161a1d
+*.cursorColor: #a3b3c2
+
+! black
+*.color0: #0b0d0f
+*.color8: #485461
+
+! red
+*.color1: #8a0f4d
+*.color9: #eb4799
+
+! green
+*.color2: #4d7a1f
+*.color10: #99d65c
+
+! yellow
+*.color3: #cf9117
+*.color11: #edbe5e
+
+! blue 
+*.color4: #1f4d7a
+*.color12: #5c99d6
+
+! magenta
+*.color5: #4d1f7a
+*.color13: #995cd6
+
+! cyan
+*.color6: #1f7a4d
+*.color14: #5cd699
+
+! white
+*.color7: #9ba8b5
+*.color15: #f0f2f4
