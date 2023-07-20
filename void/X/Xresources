@@ -41,7 +41,7 @@
 
 !! URxvt
 URxvt.scrollBar: false
-URxvt.geometry: 400x400
+URxvt.geometry: 100x40
 URxvt.cursorBlink: true
 URxvt.depth: 24
 URxvt.underlineURLs: true
