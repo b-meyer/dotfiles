@@ -52,7 +52,7 @@ export AWT_TOOLKIT="MToolkit wmname LG3D" # May have to install wmname
 export _JAVA_AWT_WM_NONREPARENTING=1 # Fix for Java applications in dwm
 
 # setup ENV
-ENV=${XDG_CONFIG_HOME:-$HOME/.config}/sh/shrc; export ENV && source ENV
+ENV=${XDG_CONFIG_HOME:-$HOME/.config}/sh/shrc; export ENV && source $ENV
 
 # Start graphical server on user's current tty if not already running.
 [ "$(tty)" = "/dev/tty1" ] && ! pidof -s Xorg >/dev/null 2>&1 && exec startx
