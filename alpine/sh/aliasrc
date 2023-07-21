@@ -7,43 +7,21 @@
 
 # sudo not required for some system commands
 for command in mount umount poweroff reboot ; do
-	alias $command="sudo $command"
+	alias $command="doas $command"
 done; unset command
 
-# se() {
-# 	choice="$(find ~/.local/bin -mindepth 1 -printf '%P\n' | fzf)"
-# 	[ -f "$HOME/.local/bin/$choice" ] && $EDITOR "$HOME/.local/bin/$choice"
-# 	;}
-
 # Verbosity and settings that you pretty much just always are going to want.
-alias \
-	cp="cp -iv" \
-	mv="mv -iv" \
-	rm="rm -vI" \
-	bc="bc -ql" \
-	rsync="rsync -vrPlu" \
-	mkd="mkdir -pv" \
-	yt="yt-dlp --embed-metadata -i" \
-	yta="yt -x -f bestaudio/best" \
-	ytt="yt --skip-download --write-thumbnail" \
-	sha="shasum -a 256" 
-
+alias cp="cp -iv"
+alias mv="mv -iv"
+alias rm="rm -vI"
+alias bc="bc -ql"
+alias rsync="rsync -vrPlu"
+alias mkdir="mkdir -pv"
+alias sha="shasum -a 256" 
 # Colorize commands when possible.
-alias \
-	ls="ls -xhA --color=auto --group-directories-first" \
-	grep="grep --color=auto" \
-	diff="diff --color=auto" \
-	ccat="highlight --out-format=ansi" \
-	ip="ip -color=auto"
-
-# These common commands are just too long! Abbreviate them.
-alias \
-	g="git" \
-	e="$EDITOR" \
-	v="$EDITOR" \
-
-alias \
-	#lf="lfub" \
-	#magit="nvim -c MagitOnly" \
-	#ref="shortcuts >/dev/null; source ${XDG_CONFIG_HOME:-$HOME/.config}/shell/shortcutrc ; source ${XDG_CONFIG_HOME:-$HOME/.config}/shell/zshnameddirrc" \
-	#weath="less -S ${XDG_CACHE_HOME:-$HOME/.cache}/weatherreport" \
+alias ls="ls -xhA --color=auto --group-directories-first"
+alias grep="grep --color=auto"
+alias diff="diff --color=auto" 
+alias ccat="highlight --out-format=ansi"
+alias ip="ip -color=auto"
+alias g="git"
