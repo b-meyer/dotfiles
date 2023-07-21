@@ -5,10 +5,10 @@
 
 [ -f "$MBSYNCRC" ] && alias mbsync="mbsync -c $MBSYNCRC"
 
-# sudo not required for some system commands
-for command in mount umount poweroff reboot ; do
-	alias $command="doas $command"
-done; unset command
+# # sudo not required for some system commands
+# for command in mount umount poweroff reboot ; do
+# 	alias $command="doas $command"
+# done; unset command
 
 # Verbosity and settings that you pretty much just always are going to want.
 alias cp="cp -iv"
