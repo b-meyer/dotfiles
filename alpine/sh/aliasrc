@@ -1,10 +1,5 @@
 #!/bin/sh
 
-# Use $XINITRC variable if file exists.
-[ -f "$XINITRC" ] && alias startx="startx $XINITRC"
-
-[ -f "$MBSYNCRC" ] && alias mbsync="mbsync -c $MBSYNCRC"
-
 # sudo not required for some system commands
 for command in mount umount poweroff reboot ; do
 	alias $command="doas $command"

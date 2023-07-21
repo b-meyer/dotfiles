@@ -8,11 +8,8 @@
 # (login screen) and so they are needed there. To prevent doubling up commands,
 # I source them here with the line below.
 
-if [ -f "$HOME/.xprofile" ]; then 
-	. "$HOME/.xprofile" 
-else 
-	. "${XDG_CONFIG_HOME:-$HOME/.config}/x11/xprofile"
-	
-fi
+
+[ -f "${XDG_CONFIG_HOME:-$HOME/.config}/x11/xprofile" ] && . "${XDG_CONFIG_HOME:-$HOME/.config}/x11/xprofile"
+[ -f "${XDG_CONFIG_HOME:-$HOME/.config}/sh/aliasrc" ] && . "${XDG_CONFIG_HOME:-$HOME/.config}/sh/aliasrc"
 
 exec dwm
