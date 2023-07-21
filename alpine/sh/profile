@@ -2,27 +2,17 @@
 
 # profile file. Runs on login. Environmental variables are set here.
 
-if [ -f "$HOME/.aliasrc" ]; then 
-	. "$HOME/.aliasrc" 
-else 
-	. "${XDG_CONFIG_HOME:-$HOME/.config}/sh/aliasrc"
-	
-fi
-
 # Adds `~/.local/bin` to $PATH
 export PATH="$PATH:${$(find ~/.local/bin -type d -printf %p:)%%:}"
 
 #unsetopt PROMPT_SP
 
 # Default programs:
-export EDITOR="nano"
+export VISUAL="nano"
+export EDITOR="$VISUAL"
 export TERMINAL="st"
 export TERMINAL_PROG="st"
 export BROWSER="firefox"
-
-# Change the default crypto/weather monitor sites.
-# export CRYPTOURL="rate.sx"
-# export WTTRURL="wttr.in"
 
 # ~/ Clean-up:
 export XDG_CONFIG_HOME="$HOME/.config"
@@ -58,6 +48,14 @@ export AWT_TOOLKIT="MToolkit wmname LG3D" # May have to install wmname
 export _JAVA_AWT_WM_NONREPARENTING=1 # Fix for Java applications in dwm
 
 [ ! -f ${XDG_CONFIG_HOME:-$HOME/.config}/shell/shortcutrc ] && setsid shortcuts >/dev/null 2>&1
+
+# setup alias
+if [ -f "$HOME/.aliasrc" ]; then 
+	. "$HOME/.aliasrc" 
+else 
+	. "${XDG_CONFIG_HOME:-$HOME/.config}/sh/aliasrc"
+	
+fi
 
 # Start graphical server on user's current tty if not already running.
 [ "$(tty)" = "/dev/tty1" ] && ! pidof -s Xorg >/dev/null 2>&1 && exec startx
