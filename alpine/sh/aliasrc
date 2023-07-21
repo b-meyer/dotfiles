@@ -1,13 +1,5 @@
 #!/bin/sh
 
-#run profile
-if [ -f "$HOME/.profile" ]; then 
-	. "$HOME/.profile" 
-else 
-	. "${XDG_CONFIG_HOME:-$HOME/.config}/sh/profile"
-	
-fi
-
 # Use $XINITRC variable if file exists.
 [ -f "$XINITRC" ] && alias startx="startx $XINITRC"
 
