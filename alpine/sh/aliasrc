@@ -1,5 +1,13 @@
 #!/bin/sh
 
+#run profile
+if [ -f "$HOME/.profile" ]; then 
+	. "$HOME/.profile" 
+else 
+	. "${XDG_CONFIG_HOME:-$HOME/.config}/sh/profile"
+	
+fi
+
 # Use $XINITRC variable if file exists.
 [ -f "$XINITRC" ] && alias startx="startx $XINITRC"
 
@@ -26,11 +34,11 @@ alias \
 	yt="yt-dlp --embed-metadata -i" \
 	yta="yt -x -f bestaudio/best" \
 	ytt="yt --skip-download --write-thumbnail" \
-	ffmpeg="ffmpeg -hide_banner"
+	sha="shasum -a 256" 
 
 # Colorize commands when possible.
 alias \
-	ls="ls -hN --color=auto --group-directories-first" \
+	ls="ls -xhA --color=auto --group-directories-first" \
 	grep="grep --color=auto" \
 	diff="diff --color=auto" \
 	ccat="highlight --out-format=ansi" \

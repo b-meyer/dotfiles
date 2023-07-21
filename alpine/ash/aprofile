@@ -1,8 +1,0 @@
-# .profile
-
-# Get the aliases and functions
-if [ -f ~/.ashrc ]; then
-	. ~/.ashrc
-fi
-
-# User specific environment and startup programs
