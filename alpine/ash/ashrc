@@ -1,18 +1,19 @@
 # .bashrc
 
-# Source global definitions
-if [ -f /etc/ashrc ]; then
-	. /etc/ashrc
+if [ -f "${XDG_CONFIG_HOME:-$HOME/.config}/x11/xprofile" ]; then
+	. "${XDG_CONFIG_HOME:-$HOME/.config}/x11/xprofile"
+else
+	. "$HOME/.xprofile"
 fi
 
-# User specific environment
-if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]
-then
-    PATH="$HOME/.local/bin:$HOME/bin:$PATH"
-fi
-export PATH
+# # User specific environment
+# if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]
+# then
+#     PATH="$HOME/.local/bin:$HOME/bin:$PATH"
+# fi
+# export PATH
 
-export PS1="\[\e[1;31m\][\[\e[m\]\[\e[1;33m\]\u\[\e[m\]\[\e[1;34m\]@\[\e[m\]\[\e[1;32m\]\h\[\e[m\] \W\[\e[1;31m\]]\[\e[m\] "
+#export PS1="\[\e[1;31m\][\[\e[m\]\[\e[1;33m\]\u\[\e[m\]\[\e[1;34m\]@\[\e[m\]\[\e[1;32m\]\h\[\e[m\] \W\[\e[1;31m\]]\[\e[m\] "
 #export PS1="\[\e[1;32m\][\u\[\e[m\] \W\[\e[1;32m\]]\[\e[m\]\$ "
 
 export VISUAL=nano
