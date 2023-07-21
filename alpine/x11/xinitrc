@@ -9,7 +9,7 @@
 # I source them here with the line below.
 
 
-[ -f "${XDG_CONFIG_HOME:-$HOME/.config}/x11/xprofile" ] && source "${XDG_CONFIG_HOME:-$HOME/.config}/x11/xprofile"
+#[ -f "${XDG_CONFIG_HOME:-$HOME/.config}/x11/xprofile" ] && source "${XDG_CONFIG_HOME:-$HOME/.config}/x11/xprofile"
 [ -f "${XDG_CONFIG_HOME:-$HOME/.config}/sh/aliasrc" ] && source "${XDG_CONFIG_HOME:-$HOME/.config}/sh/aliasrc"
 
 exec dwm
