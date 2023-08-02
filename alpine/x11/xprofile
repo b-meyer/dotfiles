@@ -13,5 +13,7 @@ xrdb ${XDG_CONFIG_HOME:-$HOME/.config}/x11/xresources & xrdbpid=$!	# Uncomment t
 # 	pidof -sx "$program" || "$program" &
 # done >/dev/null 2>&1
 
+# picom &
+
 # Ensure that xrdb has finished running before moving on to start the WM/DE.
 [ -n "$xrdbpid" ] && wait "$xrdbpid"
