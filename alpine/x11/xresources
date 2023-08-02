@@ -3,7 +3,7 @@
 ! special
 *.foreground: #e0e6eb
 *.background: #161a1d
-*.cursorColor: #a3b3c2
+*.cursorColor: #e0e6eb
 
 ! black
 *.color0: #0b0d0f

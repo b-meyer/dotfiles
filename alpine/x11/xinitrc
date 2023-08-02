@@ -11,4 +11,6 @@
 
 [ -f "${XDG_CONFIG_HOME:-$HOME/.config}/x11/xprofile" ] && source "${XDG_CONFIG_HOME:-$HOME/.config}/x11/xprofile"
 
+dwmblocks &
+
 exec dwm
