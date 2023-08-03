@@ -10,29 +10,38 @@
 *.color8: #485461
 
 ! red
-*.color1: #8a0f4d
-*.color9: #eb4799
+*.color1: #8a0f24
+*.color9: #eb4763
 
 ! green
-*.color2: #4d7a1f
-*.color10: #99d65c
+*.color2: #2e7a1f
+*.color10: #70d65c
 
 ! yellow
-*.color3: #cf9117
-*.color11: #edbe5e
+*.color3: #cfb017
+*.color11: #edd55e
 
 ! blue 
 *.color4: #1f4d7a
 *.color12: #5c99d6
 
 ! magenta
-*.color5: #4d1f7a
-*.color13: #995cd6
+*.color5: #7a1f6b
+*.color13: #d65cc2
 
 ! cyan
-*.color6: #1f7a4d
-*.color14: #5cd699
+*.color6: #1f7a6b
+*.color14: #5cd6c2
 
 ! white
 *.color7: #9ba8b5
 *.color15: #f0f2f4
+
+
+!! DWM
+dwm.normbgcolor: #161a1d
+dwm.normbordercolor: #263340
+dwm.normfgcolor: #e0e6eb
+dwm.selbgcolor: #161a1d
+dwm.selbordercolor: #324d67
+dwm.selfgcolor: #e0e6eb
