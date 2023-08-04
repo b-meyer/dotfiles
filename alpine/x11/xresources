@@ -40,7 +40,7 @@
 
 !! DWM
 dwm.normbgcolor: #161a1d
-dwm.normbordercolor: #263340
+dwm.normbordercolor: #29333d
 dwm.normfgcolor: #e0e6eb
 dwm.selbgcolor: #161a1d
 dwm.selbordercolor: #324d67
