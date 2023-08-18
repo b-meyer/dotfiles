@@ -2,12 +2,12 @@
 
 ! special
 *.foreground: #e0e6eb
-*.background: #161a1d
+*.background: #060809
 *.cursorColor: #e0e6eb
 
 ! black
-*.color0: #0b0d0f
-*.color8: #485461
+*.color0: #0b0d0e
+*.color8: #4c545d
 
 ! red
 *.color1: #8a0f24
@@ -34,14 +34,14 @@
 *.color14: #5cd6c2
 
 ! white
-*.color7: #9ba8b5
-*.color15: #f0f2f4
+*.color7: #a0a8b1
+*.color15: #f1f2f4
 
 
 !! DWM
-dwm.normbgcolor: #161a1d
-dwm.normbordercolor: #29333d
+dwm.normbgcolor: #060809
+dwm.normbordercolor: #252e37
 dwm.normfgcolor: #e0e6eb
-dwm.selbgcolor: #161a1d
+dwm.selbgcolor: #060809
 dwm.selbordercolor: #324d67
 dwm.selfgcolor: #e0e6eb
